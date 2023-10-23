@@ -1,0 +1,95 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  text-align: center;
+  background-color: #143d3a;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.body {
+  grid-area: 1/1;
+  display: flex;
+  margin: 4%;
+}
+
+.trending {
+  width: 150px;
+  background-color: rgb(94, 21, 163);
+  padding:1%;
+}
+
+.trendingArticle {
+  background-color: darkgray;
+  border-radius: 10px;
+  margin:3%;
+  padding: 3%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.trendingArticle:hover {
+  filter: drop-shadow(0 0 4em #4146a1);
+}
+
+.mainContent {
+  text-align:left;
+  flex: 1 1;
+  margin-left: 5%;
+}
+
+.sideBar {
+  flex: 1 1;
+}
+
+.moreArticles {
+  display: flex;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.link {
+  color: white;
+}
+
+.link:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.softArticle {
+  margin-left: 2%;
+}

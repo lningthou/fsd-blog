@@ -1,0 +1,40 @@
+button {
+    margin:3px;
+    background-color: white;
+    color:#d2d2d2;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-flow: row;
+    background-color: #143d3a;
+}
+
+.leftMoney {
+    text-align:left;
+    margin-left:5%;
+    margin-top:5%;
+}
+
+.blogLogoImg {
+    margin: 3%;
+    width: 80%;
+}
+
+.blogLogoImg:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+
+
+.rightLogin {
+    text-align:right;
+    margin-right:5%;
+    margin-top:5%;
+}
+
+.bar {
+    background-color: rgb(94, 21, 163);
+    margin-top:4%;
+}
