@@ -3,6 +3,7 @@ import reactLogo from './../assets/react.svg';
 import viteLogo from '/vite.svg';
 import Header from './Header.jsx';
 import Sidebar from './Sidebar.jsx';
+import MoreArticles from './MoreArticles.jsx';
 import Trending from './Trending.jsx';
 import './../App.css';
 import ai_iym from './../images/ai_iym.jpeg';
@@ -25,20 +26,7 @@ function Article() {
             <img src={viteLogo} width="20%" alt="Vite logo" />
             <p>main content, should be long and fun and the onion like</p>
           </div>
-          <div class="moreArticles">
-            <div class="softArticle">
-              <img src={viteLogo} width="20%" alt="Vite logo" />
-              <h3>TECH RULES - or does it?</h3>
-            </div>
-            <div class="softArticle">
-              <img src={viteLogo} width="20%" alt="Vite logo" />
-              <h3>TECH RULES - or does it?</h3>
-            </div>
-            <div class="softArticle">
-              <img src={viteLogo} width="20%" alt="Vite logo" />
-              <h3>TECH RULES - or does it?</h3>
-            </div>
-          </div>
+          <MoreArticles />
         </div>
         <Sidebar />
       </div>
