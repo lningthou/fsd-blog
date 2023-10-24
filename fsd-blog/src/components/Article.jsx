@@ -11,8 +11,11 @@ import ai_ite from './../images/ai_ite.jpg';
 import ai_bew from './../images/ai_bew.jpg';
 import ai_iyw from './../images/ai_iyw.jpg';
 
-function Article() {
+
+function Article(props) {
   const [count, setCount] = useState(0)
+  console.log("!!")
+  console.log(props.article.image)
 
   return (
     <>
@@ -22,9 +25,9 @@ function Article() {
         <Trending />
         <div class="mainContent">
           <div class="mainArticle">
-            <h1>TECH RULES - or does it?</h1>
-            <img src={viteLogo} width="20%" alt="Vite logo" />
-            <p>main content, should be long and fun and the onion like</p>
+            <h1>{props.article.title}</h1>
+            <img src={props.article.image} width="20%" alt="Vite logo" />
+            <div dangerouslySetInnerHTML={{ __html: props.article.content }} />;
           </div>
           <MoreArticles />
         </div>

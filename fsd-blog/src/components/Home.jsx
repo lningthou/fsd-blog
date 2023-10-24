@@ -14,10 +14,9 @@ import smtoast from './../images/smarttoast.jpg';
 import smbelt from './../images/smbelt.jpg';
 import brapp from './../images/brapp.jpg';
 
-
-function Home() {
-  const [count, setCount] = useState(0)
-
+function Home(props) {
+  const latestArticle = props.latestArticle;
+  const exclusiveArticle = props.exclusiveArticle;
   return (
     <>
       <Header />
@@ -29,8 +28,8 @@ function Home() {
               <Link to='/latest'>
                 <div className="link">
                     <h3>Latest</h3>
-                    <img src={ssmug} width="50%" alt="Vite logo" />
-                    <h1>Cutting-Edge Technology: An Unnecessary Solution to Nonexistent Problems</h1>
+                    <img src={latestArticle.image} width="50%" alt="Vite logo" />
+                    <h1>{latestArticle.title}</h1>
                 </div>
               </Link>
             </nav>
@@ -40,8 +39,8 @@ function Home() {
               <Link to='/exclusive'>
                 <div className="link">
                     <h3>Exclusive</h3>
-                    <img src={viteLogo} width="20%" alt="Vite logo" />
-                    <h1>TECH RULES - or does it?</h1>
+                    <img src={exclusiveArticle.image} width="20%" alt="Vite logo" />
+                    <h1>{exclusiveArticle.title}</h1>
                 </div>
               </Link>
             </nav>
